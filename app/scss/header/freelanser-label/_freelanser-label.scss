@@ -1,0 +1,12 @@
+.freelanser-label{
+  background-color: $light-pink;
+  border-radius: 0 0 .5em .5em;
+  position: absolute;
+  top:0;
+  max-height:85px;
+  &__text{
+  	color: white;
+	font-size: calc(1em + 1vw);
+	padding: 1em .8em .4em .8em;
+  }
+}
