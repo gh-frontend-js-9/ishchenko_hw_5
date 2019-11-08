@@ -1,4 +1,10 @@
 .background-image{
 	background: url('background-image.png') no-repeat center center;
-	background-size: contain;
+	background-size: cover;
+}
+
+@media (max-width: 620px){
+	.background-image{
+		background-size: 100%;
+	}
 }

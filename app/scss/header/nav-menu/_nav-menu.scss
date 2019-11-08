@@ -1,6 +1,7 @@
 .menu{
 	display: flex;
 	justify-content: flex-end;
+	font-family:'Montserrat', sans-serif;
 }
 
 .menu-toggle{
@@ -16,6 +17,7 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	color: $dark-blue;
+	font-weight: bold;
 	&__size{
 		font-size: calc(.5em * 2vw);
 		padding: 1em;
@@ -27,8 +29,10 @@
 	color: $light-pink;
 }
 
-@media (max-width: 620px){
+@media (max-width: 700px){
 	.menu-toggle{
+		text-transform: uppercase;
+		font-weight: bold;
 		display: block;
 		position: absolute;
 		top: .5em;
@@ -50,6 +54,4 @@
 	.social{
 		display: none;
 	}
-
-
 }

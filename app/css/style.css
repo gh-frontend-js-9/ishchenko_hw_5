@@ -1,0 +1,146 @@
+/*mixins and modifier*/
+.red_dot_after::after {
+  content: '.';
+  color: #f0454c;
+}
+
+.blue_dot_after::after {
+  content: '.';
+  color: #263742;
+}
+
+/*common*/
+.wrapper {
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.button {
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 2em 0 1em 0;
+  padding: 1.5em 2.5em;
+  border-radius: .3em;
+}
+
+/*header*/
+.background-image {
+  background: url("background-image.png") no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 620px) {
+  .background-image {
+    background-size: 100%;
+  }
+}
+
+.freelanser-label {
+  background-color: #fa5c65;
+  border-radius: 0 0 .5em .5em;
+  position: absolute;
+  top: 0;
+  max-height: 85px;
+}
+
+.freelanser-label__text {
+  color: white;
+  font-size: calc(1em + 1vw);
+  padding: 1em .8em .4em .8em;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.links {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #263742;
+  font-weight: bold;
+}
+
+.links__size {
+  font-size: calc(.5em * 2vw);
+  padding: 1em;
+}
+
+.fa {
+  padding: 1em;
+  color: #fa5c65;
+}
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top: .5em;
+    right: .7em;
+    padding: 1em;
+  }
+  .nav-menu {
+    display: none;
+    margin-right: 5em;
+    margin-top: .5em;
+    background-color: #b9c0c6;
+  }
+  .menu:hover .nav-menu {
+    display: block;
+  }
+  .social {
+    display: none;
+  }
+}
+
+/*slogan*/
+.slogan-block {
+  padding: 27em 0 25em 0;
+  max-width: 700px;
+}
+
+.slogan {
+  font-family: 'Montserrat', sans-serif;
+  color: #263742;
+}
+
+.slogan_size_l {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4vw;
+  line-height: 1.2;
+}
+
+.slogan_size_s {
+  padding: .5em 0 .5em 0;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.slogan__button {
+  font-size: .8em;
+  background-color: #fa5c65;
+}
+
+@media (max-width: 620px) {
+  .slogan-block {
+    text-align: center;
+    max-width: 400px;
+    padding: 0;
+    margin-top: 10em;
+  }
+}

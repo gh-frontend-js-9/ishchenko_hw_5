@@ -1,0 +1,9 @@
+@mixin dot($color){
+  content: '.';
+  color: $color;
+}
+
+@mixin text-size($size,$line-h){
+	font-size: $size;
+	line-height: $line-h;
+}

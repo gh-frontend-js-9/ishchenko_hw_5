@@ -1,0 +1,7 @@
+.red_dot_after::after{
+	@include dot($dot-red);
+}
+
+.blue_dot_after::after{
+	@include dot($dark-blue);
+}
