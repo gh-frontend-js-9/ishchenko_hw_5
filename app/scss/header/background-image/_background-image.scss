@@ -1,10 +1,5 @@
 .background-image{
-	background: url('background-image.png') no-repeat center center;
+	background: url('../img/background-image.png') no-repeat center center;
 	background-size: cover;
-}
-
-@media (max-width: 620px){
-	.background-image{
-		background-size: 100%;
-	}
+	min-height: 250px;
 }
