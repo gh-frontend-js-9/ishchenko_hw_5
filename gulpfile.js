@@ -1,7 +1,6 @@
 let gulp = require('gulp'),
 	sass = require('gulp-sass'),
-	browserSync = require('browser-sync'),
-	concat = require('gulp-concat');
+	browserSync = require('browser-sync');
 
 gulp.task('scss', function(){
 	return gulp.src('app/scss/**/*.scss')
