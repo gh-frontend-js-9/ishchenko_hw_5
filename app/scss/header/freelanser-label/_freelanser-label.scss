@@ -2,11 +2,15 @@
   background-color: $light-pink;
   border-radius: 0 0 .5em .5em;
   position: absolute;
-  top:0;
-  max-height:85px;
+  top: 0;
+  max-height:65px;
   &__text{
   	color: white;
-	font-size: calc(1em + 1vw);
-	padding: 1em .8em .4em .8em;
+  	@include text-size($md-size,1);
+  	padding: 1em .8em .4em .8em;
+  &_blue_dot_after::after{
+      content:'.';
+      color: $dark-blue;
+    }
   }
 }

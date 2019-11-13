@@ -1,26 +1,4 @@
 .mac-img{
-	width: 30vw;
+	width: 40vw;
 	max-width: 700px;
-}
-
-.portfolio{
-	margin-left: 5em;
-	&__heading{
-		@include text-size(4vw,1);
-	}
-	&__slogan{
-		@include text-size(1.2vw,1);
-	padding: 1em 0 1em 0;
-	}
-	&__paragraph{
-		padding-bottom: 1em;
-		white-space: pre-line;
-	}
-}
-
-@media(max-width: 700px){
-	.portfolio{
-		margin-left: 0;
-		margin-top: 2em;
-	}
 }

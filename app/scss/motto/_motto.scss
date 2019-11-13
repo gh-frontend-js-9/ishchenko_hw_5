@@ -1,0 +1,11 @@
+.motto-block{
+	max-width: 500px;
+	padding: 20em 0 15em 0;
+}
+
+@media(max-width: 620px){
+	.motto-block{
+		padding: 0;
+		padding-top: 10em;
+	}
+}

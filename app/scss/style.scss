@@ -1,9 +1,6 @@
 @import 'variables/variables';
 
-/*mixins and modifier*/
 @import 'mixins/mixins';
-
-@import 'modifier/modifier';
 
 /*common*/
 @import 'common/common';
@@ -16,10 +13,7 @@
 @import 'header/nav-menu/nav-menu';
 
 /*slogan*/
-@import 'slogan/slogan';
-
-/*about us*/
-@import 'main/about-us/about-us';
+@import 'motto/motto';
 
 /*portfolio*/
 @import 'main/portfolio/portfolio';

@@ -1,6 +1,6 @@
 .wrapper{
 	width: 100%;
-	max-width: 75vw;
+	max-width: 70vw;
 	margin: 0 auto;
 }
 
@@ -9,53 +9,65 @@
 	color:$white;
 	text-transform: uppercase;
 	margin: 2em 0 1em 0;
+	&_red{
+		padding: 1em 2.2em;
+		border-radius: .3em;
+		background-color: $light-pink;
+		&_hovered:hover{
+			background-color:$dark-blue;
+		}
+	}
+	&-arrow{
+		background-color: $white;
+		color:$light-pink;
+		padding-left: 0;
+		&_hovered:hover{
+			color:$dark-blue;
+		}
+	}
 }
 
 .heading{
 	color: $dark-blue;
 	text-transform: uppercase;
-	font-weight: 700;
-	font-family: Montserrat;
-	&_size_m{
-		font-size: 2.5vw;
+	white-space: pre-line;
+	@include fonts($mont,700);
+	&_size_lg{
+		@include text-size($lg-size,1);
+	}
+	&_size_md{
+		@include text-size($md-size,1);
+	}
+	&_size_sm{
+		@include text-size($sm-size,1);
+		padding: 1em 0 1em 0;
 	}
 }
 
 .paragraph{
 	color: $text-grey;
-	font-family: "Open Sans",sans-serif;
-	font-size: .95em;
-	font-weight: 400;
-	line-height: 1.5;
-	&_padding_around{
-		padding-top:1em;
+	white-space: pre-line;
+	@include fonts($open,400);
+	@include text-size(.9em,1.5);
+	&_red{
+		color: $light-pink;
+		padding-bottom: 1em;
+	}
+	&:last-child{
+		white-space: normal;
 	}
 }
 
-.about-us{
-	margin-right: 3em;
-	&__heading{
-		padding: 1em 0 1em 0;
-		font-size: calc(1em + 1vw);
-		white-space: pre-line;
+@media (max-width: 700px){
+	.card{
+		text-align: center;
+		margin-right: 0;
 	}
-	&__button{
-		background-color: $white;
-		color:$light-pink;
-		padding-right: 0;
-	}
-}
-
-.text{
-	font-family: Montserrat;
-	@include text-size(1em, 1);
-	padding: 1em 0;
-	color: $light-pink;
-	font-weight: 700;
 }
 
 .flex-container{
 	display: flex;
+	justify-content: space-between;
 	margin: 5em 0 5em 0;
 	&_margin_reset{
 		margin: 0;
@@ -71,4 +83,13 @@
 
 .main{
 	border-bottom: 2px solid $light-grey;
+}
+
+.block{
+	text-align: right;
+	margin-bottom: 2em;
+}
+
+.dot{
+	color:$dot-red;
 }

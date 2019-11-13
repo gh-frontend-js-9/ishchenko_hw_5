@@ -4,6 +4,13 @@
 	padding: 2em 0 2em 0;
 }
 
+.footer-i{
+	color:$light-grey;
+	&_hovered:hover{
+		color:$light-pink;
+	}
+}
+
 @media(max-width: 700px){
 	.flex-footer{
 		flex-direction: column;
