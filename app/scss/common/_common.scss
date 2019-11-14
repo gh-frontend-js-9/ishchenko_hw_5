@@ -1,0 +1,95 @@
+.wrapper{
+	width: 100%;
+	max-width: 70vw;
+	margin: 0 auto;
+}
+
+.button{
+	border:0;
+	color:$white;
+	text-transform: uppercase;
+	margin: 2em 0 1em 0;
+	&_red{
+		padding: 1em 2.2em;
+		border-radius: .3em;
+		background-color: $light-pink;
+		&_hovered:hover{
+			background-color:$dark-blue;
+		}
+	}
+	&-arrow{
+		background-color: $white;
+		color:$light-pink;
+		padding-left: 0;
+		&_hovered:hover{
+			color:$dark-blue;
+		}
+	}
+}
+
+.heading{
+	color: $dark-blue;
+	text-transform: uppercase;
+	white-space: pre-line;
+	@include fonts($mont,700);
+	&_size_lg{
+		@include text-size($lg-size,1);
+	}
+	&_size_md{
+		@include text-size($md-size,1);
+	}
+	&_size_sm{
+		@include text-size($sm-size,1);
+		padding: 1em 0 1em 0;
+	}
+}
+
+.paragraph{
+	color: $text-grey;
+	white-space: pre-line;
+	@include fonts($open,400);
+	@include text-size(.9em,1.5);
+	&_red{
+		color: $light-pink;
+		padding-bottom: 1em;
+	}
+	&:last-child{
+		white-space: normal;
+	}
+}
+
+@media (max-width: 700px){
+	.card{
+		text-align: center;
+		margin-right: 0;
+	}
+}
+
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+	margin: 5em 0 5em 0;
+	&_margin_reset{
+		margin: 0;
+	}
+}
+
+@media (max-width: 700px){
+	.flex-container{
+		flex-direction: column;
+		margin:1em 0 1em 0;
+	}
+}
+
+.main{
+	border-bottom: 2px solid $light-grey;
+}
+
+.block{
+	text-align: right;
+	margin-bottom: 2em;
+}
+
+.dot{
+	color:$dot-red;
+}

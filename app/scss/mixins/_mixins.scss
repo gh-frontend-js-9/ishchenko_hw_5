@@ -1,0 +1,14 @@
+@mixin text-size($size,$line-h){
+	font-size: $size;
+	line-height: $line-h;
+}
+
+@mixin fonts($family,$weight){
+	font-family: $family;
+	font-weight: $weight;
+}
+
+@mixin img($url){
+	background: url($url) no-repeat top center;
+	background-size: cover;
+}

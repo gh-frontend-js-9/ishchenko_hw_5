@@ -1,0 +1,22 @@
+@import 'variables/variables';
+
+@import 'mixins/mixins';
+
+/*common*/
+@import 'common/common';
+
+/*header*/
+@import 'header/background-image/background-image';
+
+@import 'header/freelanser-label/freelanser-label';
+
+@import 'header/nav-menu/nav-menu';
+
+/*slogan*/
+@import 'motto/motto';
+
+/*portfolio*/
+@import 'main/portfolio/portfolio';
+
+/*footer*/
+@import 'footer/footer';
